@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Czytaj Wodę -  kursy wędkarskie nad wodą</title>
+    <title>Czytaj Wodę - kursy wędkarskie nad wodą</title>
     <meta
       name="description"
       content="Praktyczne kursy wędkarskie z echosond, sonaru bocznego, Live/FFS i elektroniki łodziowej. Serock, Zalew Zegrzyński i szkolenia na sprzęcie klienta."
@@ -226,18 +226,19 @@
             </div>
           </div>
 
-          <form class="lead-form" action="#" method="post">
+          <form class="lead-form" action="https://formspree.io/f/mnjkalwj" method="POST">
+            <input type="hidden" name="_subject" value="Nowe zapytanie o kurs - Czytaj Wodę" />
             <label>
               Imię i nazwisko
-              <input type="text" name="name" placeholder="Jan Kowalski" />
+              <input type="text" name="name" placeholder="Jan Kowalski" required />
             </label>
             <label>
               Telefon
-              <input type="tel" name="phone" placeholder="+48 600 000 000" />
+              <input type="tel" name="phone" placeholder="+48 600 000 000" required />
             </label>
             <label>
               Email
-              <input type="email" name="email" placeholder="kontakt@example.pl" />
+              <input type="email" name="email" placeholder="kontakt@example.pl" required />
             </label>
             <label>
               Typ kursu
@@ -250,10 +251,10 @@
             </label>
             <label class="full">
               Jaki masz sprzęt i z czym jest problem?
-              <textarea name="message" rows="5" placeholder="Model echosondy, łódź, silnik dziobowy, miejsce szkolenia, preferowany termin..."></textarea>
+              <textarea name="message" rows="5" placeholder="Model echosondy, łódź, silnik dziobowy, miejsce szkolenia, preferowany termin..." required></textarea>
             </label>
             <label class="checkbox full">
-              <input type="checkbox" name="consent" />
+              <input type="checkbox" name="consent" value="Tak, zgoda na kontakt" required />
               <span>Wyrażam zgodę na kontakt w sprawie zapytania.</span>
             </label>
             <button class="button primary full" type="submit">Wyślij zapytanie</button>
